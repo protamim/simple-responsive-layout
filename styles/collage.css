@@ -19,3 +19,18 @@ img {
     grid-template-columns: repeat(2, 1fr);
     gap: 5px;
 }
+/* Responsive for Small Devices */
+@media  all and (max-width:576px) {
+    .row {
+        flex-direction: column;
+        height: auto;
+        margin-bottom: 0;
+        gap: 5px;
+    }
+}
+/* Responsive for Medium Devices */
+@media all and (min-width: 576px) and (max-width: 992px) {
+    .row > div {
+        flex: 0 0 50%;
+    }
+}
